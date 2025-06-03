@@ -70,3 +70,38 @@ body {
 .incorrect {
 	background: #ff9393;
 }
+
+/* Login Styles */
+.login-container {
+	background: #fff;
+	width: 90%;
+	max-width: 400px;
+	margin: 100px auto;
+	padding: 30px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login-container input {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+#login-btn {
+	background: #040052;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#login-btn:hover {
+	background: #07067b;
+}
+.error-text {
+	display: none;
+	color: red;
+	margin-top: 10px;
+}

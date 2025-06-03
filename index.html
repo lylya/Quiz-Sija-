@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QUIZZ</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Halaman Login -->
+		<div class="login-container" id="login-container">
+			<h1>Login</h1>
+			<input type="text" id="username" placeholder="Nama Siswa" />
+			<input type="password" id="password" placeholder="Password" />
+			<button id="login-btn">Login</button>
+			<p id="login-error" style="color: red; display: none">
+				Nama atau password salah.
+			</p>
+		</div>
+
+		<!-- Halaman Kuis -->
+		<div class="app" id="quiz-container" style="display: none">
+			<h1>Quiz Sija</h1>
+			<div class="quiz">
+				<h2 id="question">Pertanyaan ada disini</h2>
+				<div id="answer-buttons"></div>
+				<button id="next-btn">Next</button>
+			</div>
+		</div>
+
+		<script>
+			document
+				.getElementById("login-btn")
+				.addEventListener("click", function () {
+					const username = document.getElementById("username").value.trim();
+					const password = document.getElementById("password").value;
+
+					if (username !== "" && password === "sijasmkn69jkt") {
+						document.getElementById("login-container").style.display = "none";
+						document.getElementById("quiz-container").style.display = "block";
+						startQuiz();
+					} else {
+						document.getElementById("login-error").style.display = "block";
+					}
+				});
+		</script>
+
+		<script src="script.js"></script>
+	</body>
+</html>
